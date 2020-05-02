@@ -1,6 +1,7 @@
 package com.course.practicaljava.rest.domain;
 
 import java.util.Date;
+import java.util.List;
 
 public class Car {
 
@@ -10,6 +11,7 @@ public class Car {
 	private int price;
 	private boolean available;
 	private Date firstReleaseDate;
+	private List<String> additionalFeatures;
 
 	public Car() {
 
@@ -20,6 +22,10 @@ public class Car {
 		this.brand = brand;
 		this.color = color;
 		this.type = type;
+	}
+
+	public List<String> getAdditionalFeatures() {
+		return additionalFeatures;
 	}
 
 	public String getBrand() {
@@ -44,6 +50,10 @@ public class Car {
 
 	public boolean isAvailable() {
 		return available;
+	}
+
+	public void setAdditionalFeatures(List<String> additionalFeatures) {
+		this.additionalFeatures = additionalFeatures;
 	}
 
 	public void setAvailable(boolean available) {

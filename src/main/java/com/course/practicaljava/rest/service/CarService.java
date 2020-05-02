@@ -10,6 +10,7 @@ public interface CarService {
 	List<String> BRANDS = Arrays.asList("Toyota", "Honda", "Ford");
 	List<String> COLORS = Arrays.asList("Red", "Black", "White");
 	List<String> TYPES = Arrays.asList("Sedan", "SUV", "MPV");
+	List<String> ADDITIONAL_FEATURES = Arrays.asList("GPS", "Alarm", "Sunroof", "Media player", "Leather seats");
 
 	Car generateCar();
 }
