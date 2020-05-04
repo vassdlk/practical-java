@@ -25,13 +25,16 @@ repositories {
 
 ext {
 	commonsLang3Version = '3.10'
+	elasticSearchVersion = '6.8.3'
 }
 
 
 dependencies {
 	implementation('org.springframework.boot:spring-boot-starter-web')
+	implementation('org.springframework.boot:spring-boot-starter-data-elasticsearch')
 	testImplementation('org.springframework.boot:spring-boot-starter-test')
 	
 	compile "org.apache.commons:commons-lang3:${commonsLang3Version}"
+		"org.elasticsearch.client:transport:${elasticSearchVersion}"
 	compileOnly("org.springframework.boot:spring-boot-devtools")
 }

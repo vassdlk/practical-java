@@ -49,6 +49,4 @@
 	<logger name="com.course" level="info" additivity="false">
 		<appender-ref ref="stdout" />
 		<appender-ref ref="file" />
-	</logger>
-
-</configuration>
+	</logger></configuration>
